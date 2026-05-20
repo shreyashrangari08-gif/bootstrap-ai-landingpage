@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartLearn - AI Powered Advanced Landing Page</title>
+    <title>Shreyash - Premium Bootstrap AI Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Custom Premium Styles */
+        body {
+            background-color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         .hero-section {
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
             color: white;
-            padding: 90px 0;
+            padding: 110px 0;
+            border-bottom: 5px solid #6366f1;
+        }
+        .premium-card {
+            border: none;
+            border-radius: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        .premium-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
         }
         .chat-container {
-            max-width: 550px;
+            max-width: 600px;
             margin: 0 auto;
         }
         #chat-output {
-            height: 180px;
+            height: 220px;
             overflow-y: auto;
-            background-color: #f8f9fa;
+            background-color: #f1f5f9;
         }
-        .plan-card:hover {
-            transform: translateY(-5px);
-            transition: 0.3s;
-        }
-        .stat-box {
-            border-bottom: 4px solid #4f46e5;
+        .stat-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">🤖 SmartLearn AI</a>
+            <a class="navbar-brand fw-bold fs-4 text-white" href="#">🤖 Shreyash <span class="text-info">Bootstrap AI</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto fw-semibold">
                     <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Popular Tracks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary btn-sm text-white px-3 ms-2" href="#ai-zone">AI Assistant</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-info btn-sm text-dark px-3 ms-2 fw-bold" href="#ai-zone">Launch AI</a></li>
                 </ul>
             </div>
         </div>
@@ -52,163 +65,105 @@
 
     <section class="hero-section text-center">
         <div class="container">
-            <h1 class="display-4 fw-bold mb-3">Next-Gen AI Learning Platform</h1>
-            <p class="lead mb-4">Master modern technical skills with our personalized, responsive framework and interactive guidance tools.</p>
-            <a href="#ai-zone" class="btn btn-light btn-lg fw-bold shadow-sm me-2">Try AI Assistant</a>
-            <a href="#pricing" class="btn btn-outline-light btn-lg fw-bold">View Pricing</a>
+            <span class="badge bg-info text-dark mb-3 fw-bold px-3 py-2 text-uppercase tracking-wider">Empowered by JavaScript Logic</span>
+            <h1 class="display-3 fw-extrabold mb-3 text-white">Next-Gen Intelligent <br><span class="text-info">Bootstrap AI Landing Page</span></h1>
+            <p class="lead mb-5 text-secondary mx-auto" style="max-width: 700px;">Master cutting-edge full stack engineering, artificial intelligence algorithms, and responsive system design with instant automated client-side support.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#ai-zone" class="btn btn-info btn-lg fw-bold shadow">Try Live AI Assistant</a>
+                <a href="#courses" class="btn btn-outline-light btn-lg fw-bold">Explore Content</a>
+            </div>
         </div>
     </section>
 
-    <section id="features" class="container my-5 py-4">
-        <h2 class="text-center fw-bold mb-5">Why Choose SmartLearn AI?</h2>
+    <section class="container mt-n5 position-relative z-index-10">
+        <div class="bg-white rounded-3 shadow p-4 border-top border-4 border-info text-center">
+            <div class="row g-4">
+                <div class="col-6 col-md-3 border-end">
+                    <h2 class="fw-bold text-dark m-0">25,000+</h2>
+                    <small class="text-muted font-monospace">Global Learners</small>
+                </div>
+                <div class="col-6 col-md-3 border-end">
+                    <h2 class="fw-bold text-primary m-0">120+</h2>
+                    <small class="text-muted font-monospace">Expert Modules</small>
+                </div>
+                <div class="col-6 col-md-3 border-end">
+                    <h2 class="fw-bold text-success m-0">4.9 ★</h2>
+                    <small class="text-muted font-monospace">User Rating</small>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="fw-bold text-danger h2 m-0">98%</div>
+                    <small class="text-muted font-monospace">Completion Rate</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="container my-5 py-5">
+        <h2 class="text-center fw-bold mb-2">Core Architectural Features</h2>
+        <p class="text-center text-muted mb-5">Engineered with high-fidelity Bootstrap components for absolute stability.</p>
         <div class="row g-4 text-center">
             <div class="col-md-4">
-                <div class="card shadow-sm p-4 border-0 bg-light h-100">
-                    <h4 class="text-primary fw-bold">🧠 1:1 AI Mentorship</h4>
-                    <p class="text-muted">Get immediate answers to your queries via our custom interactive client-side automation engine.</p>
+                <div class="card shadow-sm p-4 premium-card bg-white h-100">
+                    <div class="fs-1 mb-2">🧠</div>
+                    <h4 class="text-dark fw-bold">1:1 Automated Guide</h4>
+                    <p class="text-muted m-0">Integrated conditional string matching algorithm handles real-time data streaming without crashing.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card shadow-sm p-4 border-0 bg-light h-100">
-                    <h4 class="fw-bold" style="color: #7c3aed;">📱 Fully Responsive</h4>
-                    <p class="text-muted">Built strictly on top of Bootstrap 5 framework grid system to look gorgeous across interfaces.</p>
+                <div class="card shadow-sm p-4 premium-card bg-white h-100">
+                    <div class="fs-1 mb-2">⚡</div>
+                    <h4 class="text-dark fw-bold">Fluid Flex Layout</h4>
+                    <p class="text-muted m-0">Crafted strictly using dynamic responsive rows, layouts, containers, and spacing scales.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card shadow-sm p-4 border-0 bg-light h-100">
-                    <h4 class="text-success fw-bold">⚡ Project Based</h4>
-                    <p class="text-muted">Apply your coding layout practices with live practical validation modules instantly.</p>
+                <div class="card shadow-sm p-4 premium-card bg-white h-100">
+                    <div class="fs-1 mb-2">🛡️</div>
+                    <h4 class="text-dark fw-bold">Verified Production</h4>
+                    <p class="text-muted m-0">Maintained and deployed directly using verified secure automated cloud servers via GitHub.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="stats" class="bg-white py-4 my-4">
-        <div class="container text-center">
-            <div class="row g-4">
-                <div class="col-6 col-md-3">
-                    <div class="p-3 bg-light rounded stat-box">
-                        <h2 class="fw-bold text-primary m-0">15K+</h2>
-                        <small class="text-muted fw-semibold">Active Learners</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="p-3 bg-light rounded stat-box">
-                        <h2 class="fw-bold text-success m-0">4.8★</h2>
-                        <small class="text-muted fw-semibold">Course Rating</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="p-3 bg-light rounded stat-box">
-                        <h2 class="fw-bold text-warning m-0">95%</h2>
-                        <small class="text-muted fw-semibold">Success Rate</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="p-3 bg-light rounded stat-box">
-                        <h2 class="fw-bold text-danger m-0">50+</h2>
-                        <small class="text-muted fw-semibold">Tech Tracks</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="bg-light py-5">
+    <section id="courses" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center fw-bold mb-4">Simple & Transparent Pricing</h2>
-            <p class="text-center text-muted mb-5">Choose a flexible plan that fits your career learning schedule.</p>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-5 col-lg-4">
-                    <div class="card h-100 shadow-sm plan-card border-0">
-                        <div class="card-body text-center p-4">
-                            <h4 class="fw-bold">Starter Plan</h4>
-                            <h1 class="my-3 text-primary">Free</h1>
-                            <p class="text-muted">Perfect for beginners exploring online learning concepts.</p>
-                            <ul class="list-unstyled text-start mb-4">
-                                <li>✓ Access to core landing layouts</li>
-                                <li>✓ Basic bot response simulation</li>
-                                <li>✓ Community forum support</li>
-                            </ul>
-                            <button class="btn btn-outline-primary w-100 fw-bold">Get Started</button>
+            <h2 class="text-center fw-bold mb-2">Our Specialized Learning Tracks</h2>
+            <p class="text-center text-muted mb-5">Click to access the standard validated framework source materials.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card premium-card shadow-sm h-100">
+                        <div class="p-4 bg-primary text-white text-center rounded-top">
+                            <h3 class="m-0">💻</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Full Stack Architecture</h5>
+                            <p class="text-muted small">Deep dive into semantic structure markup layouts, advanced DOM manipulation, frameworks, and database engineering components.</p>
+                            <button class="btn btn-sm btn-outline-primary fw-bold">Enroll Free</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="card h-100 shadow plan-card border-2 border-primary">
-                        <div class="card-body text-center p-4">
-                            <span class="badge bg-primary text-white mb-2">MOST POPULAR</span>
-                            <h4 class="fw-bold">Pro Member</h4>
-                            <h1 class="my-3 text-primary">$19<small class="text-muted fs-6">/mo</small></h1>
-                            <p class="text-muted">For students seeking rigorous development targets.</p>
-                            <ul class="list-unstyled text-start mb-4">
-                                <li>✓ Premium certified code tracking</li>
-                                <li>✓ Unlimited expert AI interactions</li>
-                                <li>✓ 24/7 dedicated system help</li>
-                            </ul>
-                            <button class="btn btn-primary w-100 fw-bold">Upgrade to Pro</button>
+                <div class="col-md-4">
+                    <div class="card premium-card shadow-sm h-100">
+                        <div class="p-4 bg-warning text-dark text-center rounded-top">
+                            <h3 class="m-0">📊</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Data Analytics & Logic</h5>
+                            <p class="text-muted small">Learn real-world statistical processing structures, client execution flows, and interactive analytics mapping layers.</p>
+                            <button class="btn btn-sm btn-outline-warning text-dark fw-bold">Enroll Free</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container my-5 text-center py-2">
-        <p class="text-uppercase text-muted small fw-bold mb-3">Our Alumni Work At Verified Companies</p>
-        <div class="d-flex flex-wrap justify-content-center gap-4 fs-5 fw-bold text-secondary opacity-75">
-            <span class="mx-2">🌐 TechCorp</span>
-            <span class="mx-2">🚀 DevStudio</span>
-            <span class="mx-2">⚡ DataNexus</span>
-            <span class="mx-2">💎 CloudScale</span>
-        </div>
-    </section>
-
-    <section id="reviews" class="container my-5 py-4">
-        <h2 class="text-center fw-bold mb-5">What Our Students Say</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="p-4 rounded bg-white shadow-sm border-start border-primary border-4">
-                    <p class="fst-italic text-muted">"The Bootstrap grid integration works smoothly on my smartphone. The prompt AI bot simulation gave accurate assignment insights!"</p>
-                    <h6 class="fw-bold m-0">- Rahul Sharma</h6>
-                    <small class="text-primary">Computer Science Student</small>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="p-4 rounded bg-white shadow-sm border-start border-primary border-4">
-                    <p class="fst-italic text-muted">"Excellent design. The layout structure flows perfectly from components to custom interactive JS elements. Highly recommended."</p>
-                    <h6 class="fw-bold m-0">- Priya Patel</h6>
-                    <small class="text-primary">Web Development Intern</small>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="bg-light py-5">
-        <div class="container" style="max-width: 750px;">
-            <h2 class="text-center fw-bold mb-5">Frequently Asked Questions</h2>
-            <div class="accordion shadow-sm" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-toggle accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            Is this platform accessible on mobile phones?
-                        </button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes, absolutely! The layout is optimized specifically using the latest Bootstrap 5 flexbox grids to ensure absolute responsive behavior across portable screens.
+                <div class="col-md-4">
+                    <div class="card premium-card shadow-sm h-100">
+                        <div class="p-4 bg-dark text-white text-center rounded-top">
+                            <h3 class="m-0">🤖</h3>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-toggle accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                            How does the integrated chatbot handle information?
-                        </button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            The assistant uses client-side JavaScript evaluation logic to parse queries such as 'courses' or 'deadline' immediately without adding system latency.
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Applied Intelligence Tools</h5>
+                            <p class="text-muted small">Configure responsive chat response simulators, native evaluation structures, and complex automation workflows.</p>
+                            <button class="btn btn-sm btn-outline-dark fw-bold">Enroll Free</button>
                         </div>
                     </div>
                 </div>
@@ -216,27 +171,112 @@
         </div>
     </section>
 
-    <section class="container my-5 py-4 text-center" style="max-width: 500px;">
-        <div class="p-4 bg-light rounded shadow-sm">
-            <h5 class="fw-bold text-dark mb-2">📥 Need Direct Assistance?</h5>
-            <p class="text-muted small mb-3">Drop a line to our technical support desk for verified student guide inquiries.</p>
-            <a href="mailto:support@smartlearn.edu" class="btn btn-outline-dark btn-sm fw-bold">Email Support Desk</a>
+    <section id="pricing" class="container my-5 py-5">
+        <h2 class="text-center fw-bold mb-5">Flexible Subscriptions</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-5">
+                <div class="card h-100 shadow-sm border-0 bg-white p-4 premium-card">
+                    <h4 class="fw-bold text-center">Basic Framework Plan</h4>
+                    <h1 class="my-3 text-center text-primary">Free</h1>
+                    <ul class="list-unstyled mb-4">
+                        <li>✓ Full responsive core component grid access</li>
+                        <li>✓ Sandbox basic JavaScript bot client access</li>
+                        <li>✓ Open community forum workspace access</li>
+                    </ul>
+                    <button class="btn btn-outline-primary w-100 fw-bold">Activate Access</button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card h-100 shadow border-3 border-info bg-white p-4 premium-card">
+                    <h4 class="fw-bold text-center text-info">Elite Developer Membership</h4>
+                    <h1 class="my-3 text-center text-dark">$29<small class="text-muted fs-6">/mo</small></h1>
+                    <ul class="list-unstyled mb-4">
+                        <li>✓ Complete production-ready layout template tracks</li>
+                        <li>✓ Uncapped dynamic artificial chatbot requests</li>
+                        <li>✓ 24/7 technical system support workspace</li>
+                    </ul>
+                    <button class="btn btn-info text-dark w-100 fw-bold">Upgrade Account</button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="ai-zone" class="py-5 bg-white">
+    <section id="reviews" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Validated Student Experiences</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 rounded bg-white shadow-sm border-start border-info border-5 h-100">
+                        <p class="fst-italic text-muted">"The Bootstrap 5 responsive layout functions beautifully on structural breakdown layouts. The interactive assistant setup helped verify complex data targets!"</p>
+                        <h6 class="fw-bold m-0">- Shreya Deshmukh</h6>
+                        <small class="text-info">Software Engineering Student</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 rounded bg-white shadow-sm border-start border-info border-5 h-100">
+                        <p class="fst-italic text-muted">"Excellent framework structural flow. The transition between components and custom JavaScript logic streams operates beautifully across mobile devices."</p>
+                        <h6 class="fw-bold m-0">- Amit Verma</h6>
+                        <small class="text-info">UI/UX Design Intern</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container my-5 py-5" style="max-width: 800px;">
+        <h2 class="text-center fw-bold mb-5">Frequently Answered Queries</h2>
+        <div class="accordion shadow-sm" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Is this deployment responsive across extreme viewports?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Yes, absolutely. The design implements fluid container sizing schemas alongside flexible row columns to handle diverse portable grid structural limits effortlessly.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        How is the automated bot logic implemented?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        The architecture relies entirely on native browser JavaScript string evaluation functions, managing immediate chat response structures completely offline.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 py-4 text-center" style="max-width: 600px;">
+        <div class="p-4 bg-white rounded shadow-sm border">
+            <h5 class="fw-bold text-dark mb-2">📥 Stay Ahead of Submission Targets</h5>
+            <p class="text-muted small mb-3">Subscribe to receive immediate documentation guides and advanced framework release sheets.</p>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Enter academic email address...">
+                <button class="btn btn-dark fw-bold">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-zone" class="py-5 bg-light border-top">
         <div class="container chat-container">
-            <div class="card shadow border-0">
-                <div class="card-header bg-primary text-white py-3">
-                    <h5 class="mb-0 fw-bold">🤖 Chat with SmartLearn AI</h5>
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-dark text-white py-3 text-center">
+                    <h5 class="mb-0 fw-bold">🤖 Interactive Shreyash Bootstrap AI Knowledge Engine</h5>
                 </div>
-                <div class="card-body">
-                    <div id="chat-output" class="p-3 border rounded mb-3">
-                        <p class="text-muted m-0">AI: Hello! Type 'courses', 'deadline', or 'help' to test my integration.</p>
+                <div class="card-body bg-white">
+                    <div id="chat-output" class="p-3 border rounded mb-3 shadow-inner">
+                        <p class="text-muted m-0">AI: System Ready. Input keywords 'courses', 'deadline', or 'help' to query verified information tracks.</p>
                     </div>
                     <div class="input-group">
-                        <input type="text" id="user-input" class="form-control" placeholder="Ask something here...">
-                        <button class="btn btn-primary fw-bold" onclick="askAI()">Send</button>
+                        <input type="text" id="user-input" class="form-control" placeholder="Query the system here...">
+                        <button class="btn btn-dark fw-bold px-4" onclick="askAI()">Send Request</button>
                     </div>
                 </div>
             </div>
@@ -245,7 +285,7 @@
 
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-            <p class="m-0 small">&copy; 2026 SmartLearn AI Platform. All Rights Verified by Shreyash.</p>
+            <p class="m-0 small opacity-75">&copy; 2026 Shreyash Bootstrap AI Framework Platform. Deployed and Verified by Shreyash.</p>
         </div>
     </footer>
 
@@ -257,15 +297,15 @@
             let output = document.getElementById('chat-output');
             if(input === "") return;
 
-            output.innerHTML += `<p class="mb-2"><strong>You:</strong> ${input}</p>`;
-            let response = "AI: I am an automated AI assistant. Try typing 'courses' or 'deadline'!";
+            output.innerHTML += `<p class="mb-2 text-dark"><strong>You:</strong> ${input}</p>`;
+            let response = "AI: Query unidentified. Try inputting 'courses' or 'deadline' to test system response structures.";
             
             if(input.includes('course') || input.includes('learning')) {
-                response = "AI: We offer premium training modules in Web Development, Bootstrap layout, and AI tools.";
+                response = "AI: System track registers 3 primary paths: Full Stack Architecture, Data Analytics, and Applied Intelligence Tools.";
             } else if(input.includes('deadline') || input.includes('date') || input.includes('task')) {
-                response = "AI: Remember, the final project submission deadline given by Sir is 25-05-2026!";
+                response = "AI: Schedule verification: The final project submission deadline given by Sir is 25-05-2026!";
             } else if(input.includes('help') || input.includes('sir')) {
-                response = "AI: This project fully integrates custom CSS, Bootstrap 5 UI Elements, and a responsive layout.";
+                response = "AI: System validation confirmed: App deploys custom CSS styling, responsive grid components, and live JS logic.";
             }
 
             setTimeout(() => {
