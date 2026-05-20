@@ -24,6 +24,9 @@
             transform: translateY(-5px);
             transition: 0.3s;
         }
+        .stat-box {
+            border-bottom: 4px solid #4f46e5;
+        }
     </style>
 </head>
 <body>
@@ -37,6 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
@@ -79,6 +83,37 @@
         </div>
     </section>
 
+    <section id="stats" class="bg-white py-4 my-4">
+        <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded stat-box">
+                        <h2 class="fw-bold text-primary m-0">15K+</h2>
+                        <small class="text-muted fw-semibold">Active Learners</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded stat-box">
+                        <h2 class="fw-bold text-success m-0">4.8★</h2>
+                        <small class="text-muted fw-semibold">Course Rating</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded stat-box">
+                        <h2 class="fw-bold text-warning m-0">95%</h2>
+                        <small class="text-muted fw-semibold">Success Rate</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded stat-box">
+                        <h2 class="fw-bold text-danger m-0">50+</h2>
+                        <small class="text-muted fw-semibold">Tech Tracks</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="pricing" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center fw-bold mb-4">Simple & Transparent Pricing</h2>
@@ -116,6 +151,16 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="container my-5 text-center py-2">
+        <p class="text-uppercase text-muted small fw-bold mb-3">Our Alumni Work At Verified Companies</p>
+        <div class="d-flex flex-wrap justify-content-center gap-4 fs-5 fw-bold text-secondary opacity-75">
+            <span class="mx-2">🌐 TechCorp</span>
+            <span class="mx-2">🚀 DevStudio</span>
+            <span class="mx-2">⚡ DataNexus</span>
+            <span class="mx-2">💎 CloudScale</span>
         </div>
     </section>
 
@@ -168,6 +213,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="container my-5 py-4 text-center" style="max-width: 500px;">
+        <div class="p-4 bg-light rounded shadow-sm">
+            <h5 class="fw-bold text-dark mb-2">📥 Need Direct Assistance?</h5>
+            <p class="text-muted small mb-3">Drop a line to our technical support desk for verified student guide inquiries.</p>
+            <a href="mailto:support@smartlearn.edu" class="btn btn-outline-dark btn-sm fw-bold">Email Support Desk</a>
         </div>
     </section>
 
