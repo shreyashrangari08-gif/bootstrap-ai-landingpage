@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartLearn - AI Powered Landing Page</title>
+    <title>SmartLearn - AI Powered Advanced Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .hero-section {
             background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
             color: white;
-            padding: 80px 0;
+            padding: 90px 0;
         }
         .chat-container {
-            max-width: 500px;
+            max-width: 550px;
             margin: 0 auto;
         }
         #chat-output {
@@ -20,40 +20,152 @@
             overflow-y: auto;
             background-color: #f8f9fa;
         }
+        .plan-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">🤖 SmartLearn AI</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link active" href="#ai-zone">AI Assistant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary btn-sm text-white px-3 ms-2" href="#ai-zone">AI Assistant</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <section class="hero-section text-center">
         <div class="container">
-            <h1 class="display-5 fw-bold mb-3">Next-Gen Learning Platform</h1>
-            <p class="lead mb-4">Built with Bootstrap 5 framework & Integrated Smart JS AI Logic.</p>
-            <a href="#ai-zone" class="btn btn-light btn-lg fw-bold shadow-sm">Try AI Assistant</a>
+            <h1 class="display-4 fw-bold mb-3">Next-Gen AI Learning Platform</h1>
+            <p class="lead mb-4">Master modern technical skills with our personalized, responsive framework and interactive guidance tools.</p>
+            <a href="#ai-zone" class="btn btn-light btn-lg fw-bold shadow-sm me-2">Try AI Assistant</a>
+            <a href="#pricing" class="btn btn-outline-light btn-lg fw-bold">View Pricing</a>
         </div>
     </section>
 
-    <section class="container my-5">
-        <h2 class="text-center fw-bold mb-4">Core Implementation Features</h2>
+    <section id="features" class="container my-5 py-4">
+        <h2 class="text-center fw-bold mb-5">Why Choose SmartLearn AI?</h2>
         <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm p-4 border-0 bg-light h-100">
+                    <h4 class="text-primary fw-bold">🧠 1:1 AI Mentorship</h4>
+                    <p class="text-muted">Get immediate answers to your queries via our custom interactive client-side automation engine.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm p-4 border-0 bg-light h-100">
+                    <h4 class="fw-bold" style="color: #7c3aed;">📱 Fully Responsive</h4>
+                    <p class="text-muted">Built strictly on top of Bootstrap 5 framework grid system to look gorgeous across interfaces.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm p-4 border-0 bg-light h-100">
+                    <h4 class="text-success fw-bold">⚡ Project Based</h4>
+                    <p class="text-muted">Apply your coding layout practices with live practical validation modules instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Simple & Transparent Pricing</h2>
+            <p class="text-center text-muted mb-5">Choose a flexible plan that fits your career learning schedule.</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5 col-lg-4">
+                    <div class="card h-100 shadow-sm plan-card border-0">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold">Starter Plan</h4>
+                            <h1 class="my-3 text-primary">Free</h1>
+                            <p class="text-muted">Perfect for beginners exploring online learning concepts.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li>✓ Access to core landing layouts</li>
+                                <li>✓ Basic bot response simulation</li>
+                                <li>✓ Community forum support</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100 fw-bold">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="card h-100 shadow plan-card border-2 border-primary">
+                        <div class="card-body text-center p-4">
+                            <span class="badge bg-primary text-white mb-2">MOST POPULAR</span>
+                            <h4 class="fw-bold">Pro Member</h4>
+                            <h1 class="my-3 text-primary">$19<small class="text-muted fs-6">/mo</small></h1>
+                            <p class="text-muted">For students seeking rigorous development targets.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li>✓ Premium certified code tracking</li>
+                                <li>✓ Unlimited expert AI interactions</li>
+                                <li>✓ 24/7 dedicated system help</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 fw-bold">Upgrade to Pro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="container my-5 py-4">
+        <h2 class="text-center fw-bold mb-5">What Our Students Say</h2>
+        <div class="row g-4">
             <div class="col-md-6">
-                <div class="card shadow-sm p-4 border-0 bg-light">
-                    <h3 class="text-primary">Responsive Grid</h3>
-                    <p class="text-muted">Designed using Bootstrap 5 to look stunning on both mobile devices and laptops.</p>
+                <div class="p-4 rounded bg-white shadow-sm border-start border-primary border-4">
+                    <p class="fst-italic text-muted">"The Bootstrap grid integration works smoothly on my smartphone. The prompt AI bot simulation gave accurate assignment insights!"</p>
+                    <h6 class="fw-bold m-0">- Rahul Sharma</h6>
+                    <small class="text-primary">Computer Science Student</small>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card shadow-sm p-4 border-0 bg-light">
-                    <h3 style="color: #7c3aed;">Smart JS Logic</h3>
-                    <p class="text-muted">Interactive client-side AI response simulation built with native JavaScript.</p>
+                <div class="p-4 rounded bg-white shadow-sm border-start border-primary border-4">
+                    <p class="fst-italic text-muted">"Excellent design. The layout structure flows perfectly from components to custom interactive JS elements. Highly recommended."</p>
+                    <h6 class="fw-bold m-0">- Priya Patel</h6>
+                    <small class="text-primary">Web Development Intern</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-light py-5">
+        <div class="container" style="max-width: 750px;">
+            <h2 class="text-center fw-bold mb-5">Frequently Asked Questions</h2>
+            <div class="accordion shadow-sm" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-toggle accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Is this platform accessible on mobile phones?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, absolutely! The layout is optimized specifically using the latest Bootstrap 5 flexbox grids to ensure absolute responsive behavior across portable screens.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-toggle accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How does the integrated chatbot handle information?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The assistant uses client-side JavaScript evaluation logic to parse queries such as 'courses' or 'deadline' immediately without adding system latency.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,6 +189,12 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="m-0 small">&copy; 2026 SmartLearn AI Platform. All Rights Verified by Shreyash.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
